@@ -27,17 +27,17 @@ export default function Home() {
             </div>
             <div className="flex-col flex gap-6 w-full">
               <div>
-                <Label htmlFor="name">Email</Label>
-                <Input id="name" type="text"/>
+                <Label htmlFor="name">Username</Label>
+                <Input id="name" type="text" name="name"/>
               </div>
               <div>
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email"/>
+                <Input id="email" type="email" name="email"/>
               </div>
-              <div>
+              {/* <div>
                 <Label htmlFor="message">Message</Label>
                 <Textarea id="message"/>
-              </div>
+              </div> */}
             </div>
             <Button disabled={state === 'loading'} variant="outline" size="sm" type="submit">
               Send
